@@ -2,8 +2,8 @@
 PRACTICE Test 2, practice_problem 2.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Jun Fan.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 # Students:
@@ -42,7 +42,7 @@ def main():
 def run_test_practice_problem2a():
     """ Tests the   practice_problem2a  function. """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function.
+    # DONE: 2. Implement this TEST function.
     #   It TESTS the  practice_problem2a  function defined below.
     #   Include at least **   4 reasonable   ** tests.
     #
@@ -55,6 +55,58 @@ def run_test_practice_problem2a():
     print('--------------------------------------------------')
     print('Testing the   practice_problem2a   function:')
     print('--------------------------------------------------')
+
+    # Test 1:
+    sequence = [1, 2, 34, 4, 5]
+    delta = 5
+    expected = [6, 7, 39, 9, 10]
+    actual = practice_problem2a(sequence, delta)
+    print("Expected:", expected)
+    print("Actual:  ", actual)
+    if expected == actual:
+        print('Passed')
+    else:
+        print('Failed')
+    print()
+
+    # Test 2:
+    sequence = [1, 2, 34, 4, 5]
+    delta = 5
+    expected = [6, 7, 39, 9, 10]
+    actual = practice_problem2a(sequence, delta)
+    print("Expected:", expected)
+    print("Actual:  ", actual)
+    if expected == actual:
+        print('Passed')
+    else:
+        print('Failed')
+    print()
+
+    # Test 3:
+    sequence = [1, 2, 34, 4, 5]
+    delta = 5
+    expected = [6, 7, 39, 9, 10]
+    actual = practice_problem2a(sequence, delta)
+    print("Expected:", expected)
+    print("Actual:  ", actual)
+    if expected == actual:
+        print('Passed')
+    else:
+        print('Failed')
+    print()
+
+    # Test 4:
+    sequence = [1, 2, 34, 4, 5]
+    delta = 5
+    expected = [6, 7, 39, 9, 10]
+    actual = practice_problem2a(sequence, delta)
+    print("Expected:", expected)
+    print("Actual:  ", actual)
+    if expected == actual:
+        print('Passed')
+    else:
+        print('Failed')
+    print()
 
 
 def practice_problem2a(sequence, delta):
