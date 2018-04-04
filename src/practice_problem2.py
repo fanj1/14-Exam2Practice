@@ -64,48 +64,48 @@ def run_test_practice_problem2a():
     print("Expected:", expected)
     print("Actual:  ", actual)
     if expected == actual:
-        print('Passed')
+        print('Test Passed')
     else:
-        print('Failed')
+        print('Test Failed')
     print()
 
     # Test 2:
-    sequence = [1, 2, 34, 4, 5]
+    sequence = [1000, 1000, 1000, 1000]
     delta = 5
-    expected = [6, 7, 39, 9, 10]
+    expected = [1005, 1005, 1005, 1005]
     actual = practice_problem2a(sequence, delta)
     print("Expected:", expected)
     print("Actual:  ", actual)
     if expected == actual:
-        print('Passed')
+        print('Test Passed')
     else:
-        print('Failed')
+        print('Test Failed')
     print()
 
     # Test 3:
     sequence = [1, 2, 34, 4, 5]
-    delta = 5
-    expected = [6, 7, 39, 9, 10]
+    delta = -5
+    expected = [-4, -3, 29, -1, 0]
     actual = practice_problem2a(sequence, delta)
     print("Expected:", expected)
     print("Actual:  ", actual)
     if expected == actual:
-        print('Passed')
+        print('Test Passed')
     else:
-        print('Failed')
+        print('Test Failed')
     print()
 
     # Test 4:
     sequence = [1, 2, 34, 4, 5]
-    delta = 5
-    expected = [6, 7, 39, 9, 10]
+    delta = 0
+    expected = [1, 2, 34, 4, 5]
     actual = practice_problem2a(sequence, delta)
     print("Expected:", expected)
     print("Actual:  ", actual)
     if expected == actual:
-        print('Passed')
+        print('Test Passed')
     else:
-        print('Failed')
+        print('Test Failed')
     print()
 
 
@@ -128,7 +128,7 @@ def practice_problem2a(sequence, delta):
       :type delta:    int
     """
     ####################################################################
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #     The testing code is already written for you (above).
     ####################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
@@ -136,6 +136,10 @@ def practice_problem2a(sequence, delta):
     #    TIME ESTIMATE:   5 minutes.
     ####################################################################
 
+    ans = []
+    for k in range(len(sequence)):
+        ans = ans + [sequence[k] + delta]
+    return ans
 
 def run_test_practice_problem2b():
     """ Tests the   practice_problem2b  function. """
