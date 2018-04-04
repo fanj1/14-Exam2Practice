@@ -236,8 +236,9 @@ def practice_problem2b(sequence):
 
     ans = ''
     for k in range(len(sequence)):
-        a = sequence[k]
-        ans = ans + a[0]
+        if len(sequence[k]) > 0:
+            a = sequence[k]
+            ans = ans + a[0]
     return ans
 
 
